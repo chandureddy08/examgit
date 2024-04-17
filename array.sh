@@ -5,4 +5,4 @@ MOVIES=("ant" "bat" "cat")
 # list always starts with 0
 # index are 0,1 and 2
 
-echo "First movie is: ${MOVIE[0]}"
+echo "First movie is: ${MOVIES[0]}"
