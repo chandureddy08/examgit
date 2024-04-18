@@ -4,7 +4,7 @@ USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
-echo -e "Script started executing at: $Y$TIMESTAMP"
+echo -e "Script started executing at: $Y $TIMESTAMP"
 
 R="\e[31m"
 G="\e[32m"
@@ -16,7 +16,7 @@ VALIDATE(){
       echo -e "$2 ...$R Failure $N"
       exit 1
     else
-      echo -e"$2 ...$G Success $N"
+      echo -e "$2 ...$G Success $N"
     fi
 }
 
